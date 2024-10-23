@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        /* General styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Styling the contact form container */
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+        }
+
+        /* Styling the form title */
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Styling for each form group (label + input/textarea) */
+        .form-group {
+            margin-bottom: 15px; /* Spacing between fields */
+        }
+
+        /* Styling the labels */
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Styling the input fields and textarea */
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px; /* Rounded corners */
+            font-size: 16px;
+        }
+
+        /* Specific styling for the textarea to allow resizing vertically */
+        .form-group textarea {
+            resize: vertical; /* Allows vertical resizing of the textarea */
+            height: 150px;
+        }
+
+        /* Styling the submit button */
+        .form-group input[type="submit"] {
+            background-color: #28a745; /* Green background */
+            color: #fff; /* White text */
+            border: none;
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px;
+            padding: 15px;
+            border-radius: 3px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for the submit button */
+        .form-group input[type="submit"]:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        /* Styling for the required asterisk */
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-form">
+        <!-- Form Title -->
+        <h2>Contact Us</h2>
+
+        <!-- Contact Form Start -->
+        <form action="/submit-contact-form" method="POST">
+            <!-- Name field -->
+            <div class="form-group">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+                <!-- 'required' ensures the user must fill this field -->
+            </div>
+
+            <!-- Email field -->
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <!-- 'type="email"' ensures proper email format and 'required' makes this field mandatory -->
+            </div>
+
+            <!-- Subject field -->
+            <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" required>
+                <!-- 'required' ensures the user must provide a subject -->
+            </div>
+
+            <!-- Message field -->
+            <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" required></textarea>
+                <!-- 'textarea' for multi-line input, 'required' to make this field mandatory -->
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Send Message">
+                <!-- The button to submit the form -->
+            </div>
+        </form>
+        <!-- Contact Form End -->
+    </div>
+
+</body>
+</html>

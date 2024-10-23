@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form with Default Values</title>
+
+</head>
+
+<body>
+    <form action="#" method="post">
+        <!-- Text Input -->
+        <!-- A single-line text input field with a default value -->
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text" value="Default Text"><br><br>
+
+        <!-- Password Input -->
+        <!-- A password input field with a default value (obscured) -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="123456"><br><br>
+
+        <!-- Email Input -->
+        <!-- An email input field with a default email address -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="example@example.com"><br><br>
+
+        <!-- Number Input -->
+        <!-- A number input field with a default value -->
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" value="42"><br><br>
+
+        <!-- Range Input -->
+        <!-- A range slider input with a default value, min, and max -->
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" value="50" min="0" max="100"><br><br>
+
+        <!-- Date Input -->
+        <!-- A date input field with a default date value -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="2024-10-21"><br><br>
+
+        <!-- Time Input -->
+        <!-- A time input field with a default time value -->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" value="12:00"><br><br>
+
+        <!-- Checkbox -->
+        <!-- A checkbox input that is checked by default -->
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" checked><br><br>
+
+        <!-- Radio Buttons -->
+        <!-- A set of radio buttons, one of which is checked by default -->
+        <label>Radio:</label>
+        <input type="radio" id="radio1" name="radio" value="option1" checked>
+        <label for="radio1">Option 1</label>
+        <input type="radio" id="radio2" name="radio" value="option2">
+        <label for="radio2">Option 2</label><br><br>
+
+        <!-- Select Dropdown -->
+        <!-- A select dropdown with one option selected by default -->
+        <label for="select">Select:</label>
+        <select id="select" name="select">
+            <option value="option1" selected>Option 1</option>
+            <option value="option2">Option 2</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <!-- A multi-line textarea with default text inside -->
+        <label for="textarea">Textarea:</label>
+        <textarea id="textarea" name="textarea" rows="4" cols="50">Default text in the textarea</textarea><br><br>
+
+        <!-- Submit Button -->
+        <!-- A submit button to submit the form -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>

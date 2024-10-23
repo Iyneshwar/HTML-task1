@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      Margin:20% 20% 20% 20%;   /* Margin 20 percent on all sides*/
+      font-family: monospace;   /* font-family Monospace is added */
+      font-size: 24px;          /* 24px font size */
+    }
+
+    #submit{
+      border:3px outset black; /* 3px border is added */
+      font-size:22px;            /* 22 px font size */
+      border-radius: 8px ;       /* border radius */
+      background-color: rgb(222, 218, 218);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Start of the form -->
+<form id="form">
+  <!-- Label for the employee type selection -->
+  <label for="employeeType">Employee Type:</label><br>
+
+  <!-- First radio button for 'Salaried' -->
+  <input type="radio" id="salaried" name="employeeType" value="salaried">
+  <!-- Label for 'Salaried' radio button, connected to the input using the 'for' attribute -->
+  <label for="salaried">Salaried</label><br>
+
+  <!-- Second radio button for 'Own Business' -->
+  <input type="radio" id="ownBusiness" name="employeeType" value="ownBusiness">
+  <!-- Label for 'Own Business' radio button, connected to the input using the 'for' attribute -->
+  <label for="ownBusiness">Own Business</label><br>
+
+  <!-- Submit button to submit the form -->
+  <input id="submit" type="submit" value="Submit">
+</form>
+<!-- End of the form -->
+
+
+</body>
+
+</html>
